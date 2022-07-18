@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head >
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="module" src="v2_app.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <style>
+        @font-face {
+            font-family: game;
+            src: url(SuperLegendBoy-4w8Y.ttf);
+            display: block;
+        }
+
+        @font-face {
+            font-family: naga;
+            src: url(EightBitDragon-anqx.ttf);
+            display: block;
+        }
+
+        @font-face {
+            font-family: tale;
+            src: url(AncientModernTales-a7Po.ttf);
+            display: block;
+        }
+
+
+        .game {
+            font-family: game;
+        }
+
+        .naga {
+            font-family: naga;
+        }
+
+        .tale {
+            font-family: tale;
+        }
+
+        .bg {
+            background-image: url("./bg.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 100vh;
+            width: 100vw;
+        }
+
+        .box {
+            background-image: url("./box.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 100vh;
+            width: 100vw;
+        }
+    </style>
+</head>
+
+<body class="bg">
+
+    <div id="app">
+        <div class="p-2">
+            <h3 class="text-center naga text-white">Jawab Soalan Berikut</h3>
+            <div class="card p-2 text-center border border-white border-4" style="background-color: #8B5268; height: 150px;">
+                <h3 id="soal" class=" game text-white"></h3>
+            </div>
+            <div class="d-flex justify-content-center text-white naga p-2">
+                <div id="clue"></div>
+            </div>
+            <div class="d-flex justify-content-center">
+                <div style="width: 40px;"><img src="./waiting.gif" alt="waiting" class="img-fluid" width="100%"></div>
+                <div id="countdown" class="display-2 p-2 naga">60</div>
+            </div>
+            <!-- <div class="px-2 border-bottom" style="width: 100%; height: 200px;" >
+                    <img id="gam" src="" style='height: 100%; width: 100%; object-fit: contain'>
+                </div> -->
+        
+        </div>
+        <div id="userSekarang"></div>
+        <div class="d-flex flex-wrap" id="top10"></div>
+    </div>
+</body>
+
+</html>
